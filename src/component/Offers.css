@@ -36,7 +36,6 @@
     font-weight: bold;
     text-align: center;
     margin: 0 250px;
-
     line-height: normal;
 }
 .offers button{ 
@@ -54,11 +53,12 @@
     align-items: center;
     justify-content: space-around;
     padding: 100px;
+    flex-wrap:wrap;
 }
 .services ul li{ 
     display: flex;
     align-items: center;
-    gap: 20px;
+    width:22%;
 }
 .service-name h2{ 
     font-size: 20px;
@@ -69,6 +69,15 @@
     font-size: 14px;
     font-weight: normal;
 }
+@media (max-width:768px){
+.services ul li{
+    width:45%;
+}
+}
+
+@media (max-width:500px){
+    .services ul li{
+        width:100%}}
 /* .services ul li .img-div{  
     display: flex;
     align-items: center;
